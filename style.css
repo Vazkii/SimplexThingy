@@ -32,9 +32,9 @@ body {
 	padding-top: 20px;
 }
 
-#footer {
+#github {
   position: absolute;
-  bottom: 5;
-  width: calc(100% - 10px);
+  top: 8;
+  left: calc(100% - 250px);
   height: 20px;
 }
