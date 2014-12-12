@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Simplex Noise Thingy</title>
+		
+		<link rel='stylesheet' href='style.css' />
+	</head>
+	
+	<body>
+		<h1>Simplex Noise Thingy!</h1>
+		
+		<div class='select'>
+			<span class='title'>Image Size:</span>
+			<select id='select-size' class='input-field'>
+				<option value='128'>128x128</option>
+				<option value='256' selected='selected'>256x256</option>
+				<option value='512'>512x512</option>
+			</select>
+		</div>
+		
+		
+		<div class='select'>
+			<span class='title'>Filter:</span>
+			<select id='select-filter' class='input-field'>
+				<option value='gray'>Grayscale</option>
+				<option value='hue'>Hue Map</option>
+				<option value='rpg' selected='selected'>RPG</option>
+			</select>
+		</div>
+		
+		<div class='select'>
+			<span class='title'>Sample Count:</span>
+			<select id='select-samples' class='input-field'>
+				<option value='0'>Very Low</option>
+				<option value='1'>Low</option>
+				<option value='2' selected='selected'>Medium</option>
+				<option value='3'>High</option>
+				<option value='4'>Very High</option>
+			</select>
+		</div>
+		
+		<div class='select'>
+			<span class='title'>Seed (optional):</span>
+			<input id='input-seed' class='input-field' maxlength='12'></input>
+		</div>
+		
+		<button id='build-button'>Generate!</button>
+		
+		<div id='loading'>
+			<h2>Loading...</h2>
+		</div>
+		
+		<div id='image'></div>
+		
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+		<script src='simplex.js'></script>
+	</body>
+</html>

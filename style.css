@@ -1,0 +1,33 @@
+body {
+	margin-top: 30px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.select {
+	width: 300px;
+	margin-left: calc(50% - 150px);
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.select > .title {
+	width: 150px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.select > .input-field {
+	width: 100px;
+	margin-left: 45px;
+}
+
+#loading {
+	padding-top: 10px;
+	display: none;
+}
+
+#image {
+	text-align: center;
+	padding-top: 20px;
+}
