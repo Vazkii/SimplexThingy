@@ -31,3 +31,10 @@ body {
 	text-align: center;
 	padding-top: 20px;
 }
+
+#footer {
+  position: absolute;
+  bottom: 5;
+  width: calc(100% - 10px);
+  height: 20px;
+}
